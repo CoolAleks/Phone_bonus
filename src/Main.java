@@ -1,19 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        int current_account=100; // ввести сумма на счёте
-        int income_sum=1000; //ввести сумму пополнения
-        int bonus_rate=100;
-        int final_account;
-        int total_bonus;
-       if (income_sum>=1000) {
-            total_bonus=income_sum/bonus_rate;
-          final_account=current_account+income_sum+total_bonus;
-        System.out.println("Bonus sum: "+total_bonus);
-           System.out.println("Final sum: "+final_account);
-       }
-       else {
-           final_account=current_account+income_sum;
-           System.out.println("Final account:"+final_account);
-    }
+        int currentAccount = 100; // ввести сумма на счёте
+        int incomeSum = 1000; //ввести сумму пополнения
+        int bonusRate = 100;
+        int finalAccount;
+        int totalBonus;
+        if (incomeSum >= 1000) {
+            totalBonus = incomeSum / bonusRate;
+            System.out.println("BonusSum: " + totalBonus);
+        } else {
+            totalBonus = 0;
+            System.out.println("BonusSum:" + totalBonus);
+        }
     }
 }
